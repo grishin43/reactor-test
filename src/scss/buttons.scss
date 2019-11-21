@@ -1,0 +1,50 @@
+@import "var";
+
+.def-button {
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0 25px;
+  font-weight: 700;
+  height: 36px;
+  line-height: 36px;
+  &:hover {
+    text-decoration: none;
+  }
+  &.def-button_green {
+    background: $color-green;
+    border-color: $color-green;
+    color: $color-white;
+    &:hover {
+      background: $color-white;
+      color: $color-green;
+    }
+  }
+  &.def-button_blue-reverse {
+    background: $color-white;
+    color: $color-blue;
+    border-color: $color-blue;
+    &:hover {
+      background: $color-blue;
+      color: $color-white;
+    }
+  }
+  &.def-button_icon {
+    background: transparent;
+    border-color: transparent;
+    padding: 0 10px;
+    &:hover {
+      background: #ebebeb;
+    }
+  }
+  > i {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+}
+
+a + .def-button {
+  margin-left: 10px;
+}
